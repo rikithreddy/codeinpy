@@ -4,11 +4,11 @@ t = int(sys.stdin.readline())
 
 for _ in range(t):
 	n= int(sys.stdin.readline())
-	x = list(map(int,sys.stdin.readline().split()))
+	x = sys.stdin.readline().split()
 	count =0 
 	flag = True
 	for i in range(n):
-		if x[i] == 1:
+		if x[i] == '1':
 			count+=1
 		else:
 			count-=1
