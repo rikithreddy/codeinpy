@@ -6,8 +6,8 @@ for _ in range(t):
 	w = list(map(int,sys.stdin.readline().split()))
 	mini = w[0]
 	for i in range(n):
-		w[i]+=i
-		if w[i] > mini:
-			mini = w[i]
+		
+		if w[i]+=i > mini:
+			mini = w[i]+i
 
 	sys.stdout.write(str(mini)+'\n')
